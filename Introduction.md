@@ -4,7 +4,9 @@ Empires in space started as a spare time project in 2009. It always stayed a sid
 I teach programming as a free lancer and just like to explain programming stuff, so I'm writing this book to explain the ideas behind the scene.
 
 Used languages are: C#, Javascript, Typescript, SQL, HTML, CSS
-Tools: Visual Studio 2019 Community (including the Database), optionally Inkscape (only if you want to read a bit about the creation of vector graphics), a web browser of your choice which has developer tools (the major ones have those)
+Tools: Visual Studio 2019 Community (including the Database), optionally Inkscape (only if you want to read a bit about the creation of vector graphics), a web browser of your choice which has developer tools (the major ones have those).  
+Older visual studio versions like VS2013 will also work, and the database can be installed separately. The SQL Server management studio is also useful if you want to delve into sql development.  
+The sql server might be replaced with other data storage technologies since we are using an interface to call all the read and write operations, but creating a new  class that implements this interface will take quite some time.
 
 This book is for beginners with some knowledge - you should know what object oriented programming is and have a vague idea of sql. 
 I try to explain all other aspects. These are among other things:
