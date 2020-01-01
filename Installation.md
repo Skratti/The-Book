@@ -98,8 +98,7 @@ The generated objects are shown in the upper left corner. You can use left click
 * Click "Write to DB" to save the galaxy to the database
 Wait till the message  "All data saved to the database." appeared.
 
-That's it for the starmap. Close the programm and open the Visual Studio solution EmpiresInSpace.sln in the EmpiresInSpace subfolder:
-
+That's it for the starmap, the programm can be closed.
 
 ## Running the game
 Right click the "EmpiresInSpace" project, set as startup project and rebuild, change the connection string in Web.config.  
