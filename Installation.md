@@ -103,4 +103,4 @@ That's it for the starmap. Close the programm and open the Visual Studio solutio
 
 ## Running the game
 Right click the "EmpiresInSpace" project, set as startup project and rebuild, change the connection string in Web.config.  
-Pressing F5 and that's it - your development environment is up and running.
+Press F5 and that's it - your development environment is up and running.
