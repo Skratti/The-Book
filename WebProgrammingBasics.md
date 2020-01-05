@@ -50,12 +50,12 @@ This can be assured by putting the HTML script element at the bottom of the webp
 $(document).ready(pageIndex.myOnLoad);
 ~~~~
 
-The $ character calls JQuery, document is a JavaScript object which is automatically created for each website and described here:  
+The $ character calls JQuery, and document is a JavaScript object which is automatically created for each website and described here:  
 https://www.w3schools.com/js/js_htmldom_document.asp  
 Take a look a that documentation and the method calls available on document.
 
 JQuery is mostly used to fetch HTML elements: $("#AnIdUsed") and $(".AcSSclassNameUsed") are a bit similar to the getElement(s) method on document. These methods return a JQuery object, which also has a handful of useful methods which are sometimes used.
-And a very nice thing is that one can put any css selector into the JQuery call to find one or more element on the page
+And a very nice thing is that one can put any css selector into the JQuery call to find one or more elements on the page
 https://www.w3schools.com/css/css_selectors.asp
 
 Back to the .ready(pageIndex.myOnLoad) call above: This adds the pageIndex.myOnLoad function to the list of functions which is called after page load. In pure Javascript, one could use 
@@ -63,7 +63,6 @@ Back to the .ready(pageIndex.myOnLoad) call above: This adds the pageIndex.myOnL
 window.onload = pageIndex.myOnLoad
 ~~~~
 with the same result. If you take a look at pageIndex.myOnLoad, you will see that a lot of HTML elements are referenced, which is the reason why the source code requires the page to be loaded.  
-
 
 
 You should now have enough background information to create a small javascript web application. I would recommand using a lightweight text editor like notepad++ for this. Create a new file game.html, paste the following code into it and use that as a framework.
