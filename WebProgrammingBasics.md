@@ -44,7 +44,7 @@ You can try these things out in the developer tools by switching to the Console 
 
 
 Empires In Space uses JavaScript to change the behaviour of the website, react on user input, changing, adding or deleting HTTP elements and much more. Most of this requires that the website is fully loaded - so the earliest point in time that theses scripts are executed is **after** the page was loaded.  
-This can be assured by putting the HTML script element at the bottom of the webpage, or by using the pageloaded event that web browsers fire after having loaded a web page. Were using the second method in the last line of file index/index.ts.
+This can be assured by putting the HTML script element at the bottom of the webpage, or by using the pageloaded event that web browsers fire after having loaded a web page. We are using the second method in the last line of file index/index.ts.
 
 ~~~~
 $(document).ready(pageIndex.myOnLoad);
