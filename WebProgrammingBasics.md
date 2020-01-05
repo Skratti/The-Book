@@ -1,8 +1,8 @@
 # Web Development Basics
 
-This chapter will explain what happens when you open websites, and how JavaScript is executed.  
+This chapter will explain what happens when you open websites, and how JavaScript is executed. A small example framework is given at the end, with which you can build your own small web application.
 
-Open the VS soultion, set the Empires In Space Index project as Startup Project and start it by pressing F5.
+Open the VS solution, set the Empires In Space Index project as Startup Project and start it by pressing F5.
 Make sure that the you use a web browser which has developer tools. Firefox, IE, Edge and chrome all do have those.  
 Open the developer tools, they can be found in the browser settings. Alternatively, press Ctrl+Shift+i or F12, depending on your browser. The following describes what Chrome and Edge do show, but Firefox and IE are not that different.  
 
