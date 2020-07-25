@@ -82,7 +82,7 @@ Now we just need to create a galaxy map in that database, and the we can run emp
 
 ## Map generation
 In the solution explorer, right click the "MapGenerator" project and select "Set as Startup Project". Right click again and do a rebuild.  
-If there is an error because of the missing Newtonsoft Library, rebuild it again. Visual studio will have downloaded the missing package and the second rebuild should show no more errors.
+If there is an error because of the missing Newtonsoft Library, rebuild it again. Visual studio will have downloaded the missing package and the second rebuild should show no more errors. If the error still occurs, you have to open Extras->NuGet Package Manager->NuGet Package Manager Console and execute ' Update-Package Newtonsoft.Json'.
 
 The map generator will need a database where he writes the generated data to. That will of course be our Andromeda database, but we have to provide a connection string to that database.  
 Open the folder DBWriter and open the file DBWriter.cs. The connection string is hard coded in here - that's actually not best practice (App.config would be better), but it will do for now.
