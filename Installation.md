@@ -70,7 +70,7 @@ We do now have to fill that database with tables, views, types, procedures and b
 * In addition, the database contains views which are mostly used fetching the data, and procedures called to write the data.
 
 In the solution explorer, under the EmpiresInSpaceDatabase project, open the file "00 CreateDameDB.sql". There are some instructions at the top. Since you're using the visual studio (another alternative would be the sql sever management studio), the name of your local sql server is shown in the sql explorer, it is probably "(localdb)\MSSQLLocalDB". Copy that into the sql script.  
-The database name is Andromeda, and the file location is the one of your GitHub repository\sql\  
+The database name is Andromeda, and the file location is the one of your GitHub repository\Database\  
 These information are needed when the script is running, but one also has to provide a database connection to give the context where the script is executed. That is done in the project properties of the EmpiresInSpaceDatabase project. Rightclick it, and select Properties and the Debug. Click "Edit" at "Target Connection String" and select your server and database.
 
 In case that you're opening the script from outside the project:  use the toolbar just above the text. There is a small "connect" button - click it and connect to your server and the Andromeda database.
@@ -82,7 +82,7 @@ Now we just need to create a galaxy map in that database, and the we can run emp
 
 ## Map generation
 In the solution explorer, right click the "MapGenerator" project and select "Set as Startup Project". Right click again and do a rebuild.  
-If there is an error because of the missing Newtonsoft Library, rebuild it again. Visual studio will have downloaded the missing package and the second rebuild should show no more errors.
+If there is an error because of the missing Newtonsoft Library, rebuild it again. Visual studio will have downloaded the missing package and the second rebuild should show no more errors. If the error still occurs, you have to open Extras->NuGet Package Manager->NuGet Package Manager Console and execute ' Update-Package Newtonsoft.Json'.
 
 The map generator will need a database where he writes the generated data to. That will of course be our Andromeda database, but we have to provide a connection string to that database.  
 Open the folder DBWriter and open the file DBWriter.cs. The connection string is hard coded in here - that's actually not best practice (App.config would be better), but it will do for now.
@@ -101,5 +101,5 @@ Wait till the message  "All data saved to the database." appeared.
 That's it for the star map, the program can be closed now.
 
 ## Running the game
-Right click the "EmpiresInSpace" project, set as startup project and rebuild, change the connection string in Web.config.  
+Right click the "EmpiresInSpace" project, set as startup project and rebuild, change the connection string in Web.config and right click Login.aspx to set it as the start page.  
 Press F5 and that's it - your development environment is up and running.
