@@ -55,7 +55,7 @@ Best would be a target folder which is not under your home directory, else we mi
 Open the visual studio solution file EmpiresInSpace.sln in the EmpiresInSpace root folder.  
 You should see the solution explorer (a tree view of the solution showing several projects). Right click the project EmpiresInSpaceDatabase and select "Set as StartUp Project". 
 
-## The database X
+## The database
 
 We now need a database for the game. I normally give them the name of a galaxy, in the course of this book I'll assume that the database has the name Andromeda.
 By choosing "Datastorage and management" during the VS installation, we have installed a sql server on your computer. 
